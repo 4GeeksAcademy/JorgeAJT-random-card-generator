@@ -36,4 +36,13 @@ window.onload = function() {
     });
   };
   generateRandomCard();
+
+  const randomCardButton = document.getElementById("randomCardButton");
+  randomCardButton.addEventListener("click", generateRandomCard);
+
+  setInterval(checkFunction, 5000);
+  function checkFunction() {
+    let check = document.getElementById("flexCheck");
+    if (check.checked === true) generateRandomCard();
+  }
 };
