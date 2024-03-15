@@ -3,11 +3,14 @@
   aspect-ratio: 2.2/3;
 }
 .container-fluid {
-  margin-top: 20rem;
+  margin-top: 18rem;
 }
 .elements {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 .suitInCard {
-  line-height: 75%;
+  line-height: 85%;
+}
+.align-self-end {
+  transform: rotate(0.5turn);
 }
