@@ -45,4 +45,19 @@ window.onload = function() {
     let check = document.getElementById("flexCheck");
     if (check.checked === true) generateRandomCard();
   }
+
+  const changeCardSize = () => {
+    const card = document.querySelector(".card");
+    const rangeValue = document.getElementById("cardSizeRange").value;
+
+    card.style.width = rangeValue * 10 + "px";
+    if (parseInt(rangeValue * 10) < 100) {
+      card.style.width = "100px";
+    } else if (parseInt(rangeValue * 10) > 650) {
+      card.style.width = "650px";
+    }
+  };
+
+  const cardSizeRange = document.getElementById("cardSizeRange");
+  cardSizeRange.addEventListener("input", changeCardSize);
 };
