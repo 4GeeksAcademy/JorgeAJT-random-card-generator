@@ -1,6 +1,7 @@
 /* aspectratio 2.2/3 */
 .card {
   aspect-ratio: 2.2/3;
+  box-shadow: 9px 7px 13px 0px black;
 }
 .container-fluid {
   margin-top: 10rem;
@@ -13,4 +14,19 @@
 }
 .align-self-end {
   transform: rotate(0.5turn);
+}
+#randomCardButton {
+  box-shadow: 2px 2px 20px 0px black;
+}
+#randomCardButton:hover {
+  background-color: orange;
+}
+#flexCheck:hover {
+  background-color: rgb(255, 216, 143);
+}
+#flexCheck:checked {
+  background-color: orange;
+}
+#flexCheck {
+  border-color: rgb(126, 82, 0);
 }
